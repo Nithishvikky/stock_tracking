@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2e7bcd64c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <h1 class="heading">Find Out the Stock</h1>
+            <div class="search-container">
+                 <h2 style="color: white;">Symbol of that Stock</h2>
+                <input id="search" type="text" placeholder="Enter the company">
+            </div>
+           <div class="dmy">
+           <span>
+           <label>Date :</label>
+           <input id="date"  type="number" placeholder="dd" size="4">
+           </span>
+           <span>
+            <label>Month :</label>
+           <input id="month"  type="number" placeholder="mm">
+           </span>  
+           <span>
+           <label>Year :</label>
+           <input id="year"  type="number" placeholder="yyyy">
+          </span>
+           </div>
+           <span class="button">
+           <button id="btn" onclick="getdata()">search</button>
+           </span>
+           <p id="notify">Click Search & Scroll down to see information of the 
+            <br>company</p>
+    </div>
+    <marquee id="Current"></marquee>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Open</th>
+            <th>Close</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Volume</th>
+        </tr>
+        <tr>
+            <th id="firDate"></th>
+            <th id="p1"></th>
+            <th id="p2"></th>
+            <th id="p3"></th>
+            <th id="p4"></th>
+            <th id="p5"></th>
+        </tr>
+        <tr>
+            <th id="secDate"></th>
+            <th id="p11"></th>
+            <th id="p12"></th>
+            <th id="p13"></th>
+            <th id="p14"></th>
+            <th id="p15"></th>
+        </tr>
+        <tr>
+            <th id="thiDate"></th>
+            <th id="p21"></th>
+            <th id="p22"></th>
+            <th id="p23"></th>
+            <th id="p24"></th>
+            <th id="p25"></th>
+        </tr>
+     </table>
+        <div id="detail">
+         <h1 id="name" style="text-decoration: underline;"></h1>
+         <h3 id="symbol"></h3>
+         <h3 id="assettype"></h3><br>
+         <h3 id="description"></h3><br>
+         <h3 id="Country"></h3>
+         <h3 id="Currency"></h3>
+         <h3 id="Exchange"></h3>
+         <h3 id="Sector"></h3>
+         <h3 id="Industry"></h3>
+         <h3 id="Address"></h3>
+         <h3 id="MarketCapitalization"></h3>
+         <h3 id="SharesOutstanding"></h3>
+         
+        </div>
+    </div>
+
+    
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
